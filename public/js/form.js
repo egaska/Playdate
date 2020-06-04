@@ -1,8 +1,7 @@
-$(document).ready(function() {
-
-  $(".submit").on("click", function handleFormSubmit(event) {
+$(document).ready(() => {
+  $(".submit").on("click", (event) => {
     event.preventDefault();
-    let newAvailablity = $(".custom-select").map((i, item) => item.value);
-   console.log(newAvailablity);
+    const newAvailablity = $(".custom-select").map((i, item) => item.value);
+    console.log(newAvailablity);
   });
 });
