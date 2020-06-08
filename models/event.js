@@ -8,15 +8,15 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
         start_time: {
-            type: DataTypes.DATETIME,
+            type: DataTypes.TIME,
             allowNull: false
         },
         end_time: {
-            type: DataTypes.DATETIME,
+            type: DataTypes.TIME,
             allowNull: false
         },
         user_id: {
-            type: DataTypes.INT,
+            type: DataTypes.INTEGER,
             allowNull: false
         }
     });

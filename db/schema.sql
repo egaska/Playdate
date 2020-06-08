@@ -4,15 +4,28 @@ DROP TABLE IF EXISTS users;
 CREATE TABLE users(
   id INT NOT NULL AUTO_INCREMENT,
   user_name VARCHAR(30) NOT NULL,
+  nine_am BOOLEAN DEFAULT TRUE,
+  ten_am BOOLEAN DEFAULT TRUE,
+  eleven_am BOOLEAN DEFAULT TRUE,
+  twelve_pm BOOLEAN DEFAULT TRUE,
+  one_pm BOOLEAN DEFAULT TRUE,
+  two_pm BOOLEAN DEFAULT TRUE,
+  three_pm BOOLEAN DEFAULT TRUE,
+  four_pm BOOLEAN DEFAULT TRUE,
+  five_pm BOOLEAN DEFAULT TRUE,
+  six_pm BOOLEAN DEFAULT TRUE,
+  seven_pm BOOLEAN DEFAULT TRUE,
+  eight_pm BOOLEAN DEFAULT TRUE,
+  nine_pm BOOLEAN DEFAULT TRUE,
   PRIMARY KEY (id)
 );
 
-CREATE TABLE events(
-  id INT NOT NULL AUTO_INCREMENT,
-  event_name VARCHAR(120) NOT NULL,
-  start_time DATETIME NOT NULL,
-  end_time DATETIME NOT NULL,
-  user_id INT NOT NULL,
-  PRIMARY KEY (id),
-  FOREIGN KEY (user_id) REFERENCES users(id)
-);
+-- CREATE TABLE events(
+--   id INT NOT NULL AUTO_INCREMENT,
+--   event_name VARCHAR(120) NOT NULL,
+--   start_time TIME NOT NULL,
+--   end_time TIME NOT NULL,
+--   user_id INT NOT NULL,
+--   PRIMARY KEY (id),
+--   FOREIGN KEY (user_id) REFERENCES users(id)
+-- );
