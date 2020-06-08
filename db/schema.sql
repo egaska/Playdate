@@ -17,8 +17,7 @@ CREATE TABLE schedules(
   seven_pm BOOLEAN DEFAULT TRUE,
   eight_pm BOOLEAN DEFAULT TRUE,
   nine_pm BOOLEAN DEFAULT TRUE,
-  PRIMARY KEY (id),
-  FOREIGN KEY (user_id) REFERENCES users(id)
+  PRIMARY KEY (id)
 );
 
 -- CREATE TABLE events(
