@@ -32,9 +32,9 @@ module.exports = function (sequelize, DataTypes) {
     );
   });
   User.associate = function (models) {
-    // Associating User with Events
-    // When an User is ***, also ***, any associated Events
-    User.hasMany(models.Event, {
+    // Associating User with Schedules
+    // When an User is ***, also ***, any associated Schedules
+    User.hasMany(models.Schedule, {
     });
   };
 
