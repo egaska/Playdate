@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS events;
+-- DROP TABLE IF EXISTS events;
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users(
   id INT NOT NULL AUTO_INCREMENT,
-  user_name VARCHAR(30) NOT NULL,
+  user_id INT NOT NULL,
   nine_am BOOLEAN DEFAULT TRUE,
   ten_am BOOLEAN DEFAULT TRUE,
   eleven_am BOOLEAN DEFAULT TRUE,
@@ -17,7 +17,8 @@ CREATE TABLE users(
   seven_pm BOOLEAN DEFAULT TRUE,
   eight_pm BOOLEAN DEFAULT TRUE,
   nine_pm BOOLEAN DEFAULT TRUE,
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 -- CREATE TABLE events(
