@@ -1,3 +1,5 @@
 models/index.js
 node_modules
 models/user.js
+models/event.js
+routes/events-api-routes.js
