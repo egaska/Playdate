@@ -10,8 +10,8 @@ CREATE TABLE users(
 CREATE TABLE events(
   id INT NOT NULL AUTO_INCREMENT,
   event_name VARCHAR(120) NOT NULL,
-  start_time DATETIME NOT NULL,
-  end_time DATETIME NOT NULL,
+  start_time TIME NOT NULL,
+  end_time TIME NOT NULL,
   user_id INT NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (user_id) REFERENCES users(id)
