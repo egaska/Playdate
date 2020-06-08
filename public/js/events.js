@@ -1,5 +1,5 @@
 // Requiring our models as we've configured it
-const db = require("../models");
+const db = require("../../models");
 
 // GET route for getting all of the events
 app.get("/api/events", (req, res) => {
