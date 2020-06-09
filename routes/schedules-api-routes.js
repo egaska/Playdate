@@ -46,7 +46,7 @@ app.post("/api/events", function (req, res) {
     eight_pm : req.body.Availablity[11],
     nine_pm : req.body.Availablity[12],
   }).then(function (dbEvent) {
-    res.json(dbEvent);
+    res.send(dbEvent);
     
   });
 });
