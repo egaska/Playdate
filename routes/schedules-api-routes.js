@@ -29,9 +29,9 @@ app.get("/api/events/:id", function (req, res) {
 // POST route for saving a new event *** this will need to be changed
 // because Event.create will be a single entry
 app.post("/api/events", function (req, res) {
-  console.log(req.body);
+  console.log(req.user);
   db.Schedule.create({
-    user_id: req.user,
+    UserId: req.user.id,
     nine_am : req.body.Availablity[0],
     ten_am : req.body.Availablity[1],
     eleven_am : req.body.Availablity[2],
