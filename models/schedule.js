@@ -1,9 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
     const Schedule = sequelize.define("Schedule", {
-        user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
         nine_am: {
             type: DataTypes.BOOLEAN,
             allowNull: false
