@@ -19,15 +19,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./stylesheets/events-style.css" />
+    <link rel='stylesheet' href='/box-shadows.css'>
+    
     <title>Playdate</title>
   </head>
 
   <body>
-    <!-- body.appendChild[0] -->
     <header class="jumbotron">
-      <h1 class="display-3">Playdate</h1>
-      <p class="lead" id="activityTitle">activityTitle</p>
-      <!-- body.children[0].children[2].appendChild -->
+      <div id = "header">
+        <h1 class="display-3">Playdate</h1>
+      </div>
     </header>
 
     <div class="container">
@@ -61,10 +62,10 @@
           11AM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="elevenAMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="elevenAMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -74,10 +75,10 @@
           12PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="twelvePMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="twelvePMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -87,10 +88,10 @@
           1PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="onePMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="onePMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -100,10 +101,10 @@
           2PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="twoPMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="twoPMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -113,10 +114,10 @@
           3PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="threePMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="threePMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
       <!-- 4PM -->
@@ -125,10 +126,10 @@
           4PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="fourPMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="fourPMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -138,10 +139,10 @@
           5PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="fivePMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="fivePMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
       <!-- 6PM -->
@@ -150,10 +151,10 @@
           6PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="sixPMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="sixPMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -163,10 +164,10 @@
           7PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="sevenPMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="sevenPMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -176,10 +177,10 @@
           8PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="eightPMMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="eightPMMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
 
@@ -189,13 +190,15 @@
           9PM
         </div>
         <div class="dropdown">
-            <select class="custom-select" id="ninePMDropdown">
-                <option selected value="true">Free</option>
-                <option value="false">Busy</option>
-              </select>
+          <select class="custom-select" id="ninePMDropdown">
+            <option selected value="true">Free</option>
+            <option value="false">Busy</option>
+          </select>
         </div>
       </div>
-      <input class="btn btn-primary submit" type="submit" value="Submit" />
+
+      <input class="submit bShadow-8" type="submit" value="Submit" />
+
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
@@ -210,6 +213,5 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="js/form.js"></script>
-    
   </body>
 </html>
