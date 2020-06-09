@@ -9,5 +9,6 @@ $(document).ready(() => {
     $.post("/api/events", {Availablity: newAvailablity}).then(function(data) {
     console.log(data);
     });
+    window.location.href = "/schedules";
   });
 });
