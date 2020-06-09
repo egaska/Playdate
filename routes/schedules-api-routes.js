@@ -7,7 +7,6 @@ module.exports = function (app) {
     db.Schedule.findAll({
       where: query
     }).then(function (dbSchedule) {
-      console.log(dbSchedule);
       res.json(dbSchedule);
     });
   });
