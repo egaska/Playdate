@@ -23,6 +23,15 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));}
   });
 
+  app.get("/signup", (req, res) => {
+    // If the user already has an account send them to the form page
+    if (req.user) {
+      res.redirect("/form");
+    }
+    else{
+    res.sendFile(path.join(__dirname, "../public/signup.html"));}
+  });
+
   app.get("/schedules", (req, res) => {
     // If the user already has an account send them to the schedules page
     if (!req.user) {
