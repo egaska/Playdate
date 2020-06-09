@@ -11,7 +11,7 @@ module.exports = function(app) {
       res.redirect("/form");
     }
     else{
-    res.sendFile(path.join(__dirname, "../public/login.html"));}
+    res.sendFile(path.join(__dirname, "../public/index.html"));}
   });
 
   app.get("/login", (req, res) => {
@@ -20,13 +20,13 @@ module.exports = function(app) {
       res.redirect("/form");
     }
     else{
-    res.sendFile(path.join(__dirname, "../public/login.html"));}
+    res.sendFile(path.join(__dirname, "../public/index.html"));}
   });
 
   app.get("/schedules", (req, res) => {
     // If the user already has an account send them to the schedules page
     if (!req.user) {
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
     }
     else{
       res.sendFile(path.join(__dirname, "../public/schedules.html"));
