@@ -3,3 +3,4 @@ node_modules
 models/user.js
 models/schedule.js
 routes/schedules-api-routes.js
+public/js/form.js
